@@ -1,0 +1,32 @@
+
+
+.div{
+	max-width:1200px;
+	width:100%;
+	margin:20px auto;
+	border:1px solid black;
+}
+
+.clearfix:after{
+	content:"";       
+	display:block;
+	height:0;
+	clear:both;
+}
+
+
+.div1{
+	/**设置背景色*/
+	background:rgb(254,165,0);
+	/**构造正方形**/
+	width:30%;
+	height:0;               /***避免被内容撑开多余的高度****/
+	padding-top:30%;      /***padding和margin的百分比是按照父元素的宽度计算的；padding-bottom:30%效果是一样的*****/
+	/**浮动**/
+	float:left;
+	/***设置圆角****/
+	border-radius:3%;
+	margin:calc(10%/6);
+	
+}
+
