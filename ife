@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>三种布局</title>
+	</head>
+	<style>
+	    .wrap{
+		     max-width:1500px;
+			 display:flex;
+		}
+
+		.item_left,.item_right,content{
+		    min-height:500px;	
+		}
+		.item_left{
+		    flex: 0 0 200px;
+			background:red;
+		}
+		.item_right{
+		    flex: 0 0 300px;
+			background:yellow;
+		}
+		.content{
+		    flex: 1;
+			background:green;
+		}
+		
+	</style>
+	<body>
+	    <div class="wrap">
+		    <div class="item_left"></div>
+			<div class="content"></div>
+			<div class="item_right"></div>
+		</div>
+	</body>
+</html>
